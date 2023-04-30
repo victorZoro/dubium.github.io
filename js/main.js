@@ -3,7 +3,8 @@ const BODY = document.querySelector("body"),
       TOGGLE = document.querySelector(".toggle"),
       USER_TEXT = document.querySelector(".user-text"),
       STATUS = document.querySelector(".status"),
-      TOP_BAR = document.querySelector(".top-bar");
+      TOP_BAR = document.querySelector(".top-bar"),
+      POST = document.querySelector(".posted");
 
 let isClicked = false;
 
@@ -21,6 +22,10 @@ USER_TEXT.addEventListener("click", () => {
         STATUS.innerText = "offline";
         isClicked = true;    
     }
+})
+
+POST.addEventListener("click", () => {
+    window.open("../comment_page/comment.html","_self");
 })
 
 window.addEventListener("resize", () => {

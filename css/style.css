@@ -52,6 +52,7 @@ h1 {
     'opsz' 48
 }
 
+
 /* ==========================================
                     Sidebar
 ============================================= */
@@ -697,6 +698,10 @@ header .user-text .status {
     background: var(--highlight-color);
 }
 
+.feed .posted:hover {
+    background: var(--box-shadow-color);
+}
+
 /* ==========================================
                 Community Page
 ============================================= */
@@ -830,4 +835,18 @@ header .user-text .status {
 
 .rectangle .text.link:hover {
     color: var(--highlight-hover-color);
+}
+
+/* ==========================================
+                postedComment Page
+============================================= */
+.comment{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.comment .comment-title{
+    font-size: 25px;
 }
