@@ -1,5 +1,4 @@
-![Logo](https://github.com/victorZoro/dubium/assets/105755567/19bb80a0-9460-46f4-a2d6-50d65cce0a8b)
-# dubium - Fórum de Dúvidas
+# ![LightLogo](https://github.com/victorZoro/dubium/assets/105755567/3cd920ee-fb25-4353-ae1c-fa3bb4150de6) dubium
 - **Grupo realizador:** Victor Gabriel, Anna Luisa e Lucas Vinicios.
 - **Versão:** 1.0
 
