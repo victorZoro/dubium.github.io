@@ -1,9 +1,7 @@
 # dubium - Fórum de Dúvidas
 
 - **Grupo realizador:** Victor Gabriel, Anna Luisa e Lucas Vinicios.
-  
-- **Deadline:** 24/04/2023 (13 dias desde a proposta do trabalho).
-  
+- **Versão:** 1.0
 
 ---
 
@@ -11,15 +9,16 @@
 
 - Trabalho prático de WEB II com intúito de produzir um site/protótipo de uma rede social de fóruns focada em dúvidas dirigido a alunos, professores e ex-alunos, em especial, os alunos do CEFET-MG Campus Contagem.
   
-- "Baseada na aula sobre princípios e diretrizes do design de interface, faça a interface gráfica de uma rede social para os alunos do CEFET-Contagem. Escolha um tema/objetivo dessa rede social. Pensem na acessibilidade/inclusão, ou seja, considerem as opções de interfaces para os tipos usuários com as restrições que estudamos em sala de aula." - Kattiana Constantino
-  
 
 ---
 
 ## Objetivos:
 
-- A serem escritos.
-  
+- Desenvolver um website com front-end e back-end completos (sendo adicionados incrementalmente ao longo do ano letivo de 2023).
+- Aprender a como construir um website seguindo as diretrizes do design de interface, pensando na acessibilidade para todos os tipos de usuário.
+- Aprender a como projetar um website completo.
+- Aprender a como utilizar as ferramentas HTML e CSS.
+- Aprender a como utilizar as ferramentas e a linguagem de programação PHP e JavaScript.
 
 ---
 
@@ -42,8 +41,6 @@
 
 ## Desenvolvimento:
 
-- A ser escrito.
-  
 - Acompanhar os commits para mais informações.
   
 
@@ -51,8 +48,7 @@
 
 ## Conclusão:
 
-- A ser escrito.
-  
+- A ser escrito ao fim do projeto.
 
 ---
 
