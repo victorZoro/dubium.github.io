@@ -3,14 +3,12 @@
 - **Grupo realizador:** Victor Gabriel, Anna Luisa e Lucas Vinicios.
 - **Versão:** 1.0
 
----
 
 ## Introdução da proposta:
 
 - Trabalho prático de WEB II com intúito de produzir um site/protótipo de uma rede social de fóruns focada em dúvidas dirigido a alunos, professores e ex-alunos, em especial, os alunos do CEFET-MG Campus Contagem.
   
 
----
 
 ## Objetivos:
 
@@ -19,8 +17,6 @@
 - Aprender a como projetar um website completo.
 - Aprender a como utilizar as ferramentas HTML e CSS.
 - Aprender a como utilizar as ferramentas e a linguagem de programação PHP e JavaScript.
-
----
 
 ## Sobre o Projeto (Requisitos e Características):
 
@@ -37,20 +33,15 @@
 - Com a abordagem de fóruns e comunidades, o lado positivo, é que não há necessidade de gastar muito tempo com criação de páginas, visto que o tempo para a entrega do trabalho é curto.
   
 
----
-
 ## Desenvolvimento:
 
-- Acompanhar os commits para mais informações.
+- 30/04/2023: Foi completo o projeto da interface gráfica do site, com algumas páginas em funcionamento, exceto pelo back-end, que ainda não foi projetado por não ser o intuito atual da prática. O site ainda precisa de muitas melhorias e foi a primeira experiência real do grupo com o desenvolvimento de uma interface de site que tivesse funcionalidades mais modernas.
+- 13/05/2023: Após ser proposta a segunda parte do trabalho envolvendo o site, a reprojeção da interface gráfica e os estudos para que os problemas encontrados na versão 1.0 sejam resolvidos retornam. O site está sendo projetado no Figma, primeiramnete, para depois ser trazido ao HTML e o CSS. São esperadas mudanças significativas no design e, se possível, a projeção de um modo escuro ou modo noturno para usuários que tenham fotossensibilidade ou que estejam utilizando o site durante a noite.
   
-
----
 
 ## Conclusão:
 
 - A ser escrito ao fim do projeto.
-
----
 
 ## Considerações:
 
@@ -61,8 +52,7 @@
 - Todas as imagens e ícones de terceiros serão creditadas abaixo.
   
 
----
-
 ## Links referênciados:
 
-- A serem escritos.
+- Ícones: https://fonts.google.com/icons
+- Fontes: Poppins (https://fonts.google.com/specimen/Poppins?query=Poppins&preview.text=Poppins&preview.text_type=custom) e Roboto (https://fonts.google.com/specimen/Roboto?query=roboto&preview.text=Poppins&preview.text_type=custom)
