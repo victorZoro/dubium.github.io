@@ -37,7 +37,16 @@
 
 - **30/04/2023:** Foi completo o projeto da interface gráfica do site, com algumas páginas em funcionamento, exceto pelo back-end, que ainda não foi projetado por não ser o intuito atual da prática. O site ainda precisa de muitas melhorias e foi a primeira experiência real do grupo com o desenvolvimento de uma interface de site que tivesse funcionalidades mais modernas.
 - **13/05/2023:** Após ser proposta a segunda parte do trabalho envolvendo o site, a reprojeção da interface gráfica e os estudos para que os problemas encontrados na versão 1.0 sejam resolvidos retornam. O site está sendo projetado no Figma, primeiramnete, para depois ser trazido ao HTML e o CSS. São esperadas mudanças significativas no design e, se possível, a projeção de um modo escuro ou modo noturno para usuários que tenham fotossensibilidade ou que estejam utilizando o site durante a noite.
-  
+
+## Imagens do Site
+
+### Mockup (versão 1.0)
+- Geral
+![image](https://github.com/victorZoro/dubium/assets/105755567/c9af76c8-662a-417c-80f2-41d80a535a25)
+- Página Inicial
+![Página Principal](https://github.com/victorZoro/dubium/assets/105755567/f59c21f8-6628-4c7f-9c40-90dfd85b88ef)
+- Página de Login
+![Login](https://github.com/victorZoro/dubium/assets/105755567/0c822cc3-ea09-41ed-ad18-4ec9bf1ea0d7)
 
 ## Conclusão:
 
