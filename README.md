@@ -43,10 +43,6 @@
 ### Mockup (versão 1.0)
 - Geral
 ![image](https://github.com/victorZoro/dubium/assets/105755567/c9af76c8-662a-417c-80f2-41d80a535a25)
-- Página Inicial
-![Página Principal](https://github.com/victorZoro/dubium/assets/105755567/f59c21f8-6628-4c7f-9c40-90dfd85b88ef)
-- Página de Login
-![Login](https://github.com/victorZoro/dubium/assets/105755567/0c822cc3-ea09-41ed-ad18-4ec9bf1ea0d7)
 
 ## Conclusão:
 
