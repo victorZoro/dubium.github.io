@@ -1,0 +1,17 @@
+@import "../login_style.css";
+
+body.dark {
+    background: var(--text);
+}
+
+body.dark .login-box {
+    background: var(--background);
+}
+
+body.dark .text {
+    color: var(--white);
+}
+
+body.dark .logo-text {
+    color: var(--white);
+}

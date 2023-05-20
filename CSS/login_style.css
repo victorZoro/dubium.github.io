@@ -1,0 +1,93 @@
+@import "style.css";
+
+/* ==========================================
+                Login Screen
+============================================= */
+.login-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    margin: 50px;
+    border-radius: var(--big-border-radius);
+    width: 700px;
+    height: 850px;
+    background: var(--blue);
+    gap: 30px;
+}
+
+.login-box.dark {
+    background: var(--text);
+}
+
+.login-title-text {
+    font-size: 96px;
+    font-weight: 900;
+    color: var(--orange);
+}
+
+.login-box .fields-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 239px;
+    gap: 30px;
+}
+
+.login-box .fields-box .field {
+    width: 100%;
+    height: 70px;
+    border-radius: var(--default-border-radius);
+    background: var(--white);
+}
+
+.login-box .fields-box .field input {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: var(--default-border-radius);
+    background: var(--white);
+}
+
+.login-box .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-box .actions button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+    gap: 10px;
+    border-radius: var(--big-border-radius);
+    background: var(--orange);
+    width: 80%px;
+    height: 90px;
+}
+
+.login-box .actions .login-text {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.login-box .actions .login-icon {
+    font-size: 24px;
+}
+
+.login-box .actions .signup-text {
+    color: var(--orange);
+}

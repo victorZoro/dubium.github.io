@@ -1,0 +1,17 @@
+@import "../sidebar.css";
+
+body.dark .sidebar {
+    background: var(--text);
+}
+
+body.dark .logo-text {
+    color: var(--white);
+}
+
+body.dark .text {
+    color: var(--white);
+}
+
+body.dark .buttons .login-btn {
+    color: var(--green);
+}
