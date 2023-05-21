@@ -1,0 +1,13 @@
+@import "../sidebar.css";
+
+.sidebar.closed {
+    width: 120px;
+}
+
+.sidebar.closed .toggle-btn {
+    transform: translateY(-50%);
+}
+
+.sidebar.closed .text {
+    opacity: 0;
+}

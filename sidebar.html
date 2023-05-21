@@ -12,81 +12,81 @@
     <!-- CSS & JS -->
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/dark_mode/sidebar_dark.css">
+    <link rel="stylesheet" href="CSS/sidebar_closed/sidebar_closed.css">
+    <link rel="stylesheet" href="CSS/hovering/hovering.css">
     <script defer src="JS/script.js"></script>
 </head>
-<body class="dark">
-    <nav class="sidebar">
-        <div class="container">
-            <div class="top">
-                <div class="logo-box">
-                    <img class="logo" src="ASSETS/logo/logo_light.svg" alt="dubium">
-                    <span class="logo-text">dubium</span>
-                </div>
-
-                <div class="toggle-btn">
-                    <button class="material-symbols-outlined text icon borderless">chevron_left</button>
-                </div>
-    
-                <div>
-                    <ul class="buttons">
-                        <li>
-                            <a href="#" class="sidebar-btn">
-                                <i class="material-symbols-outlined text">cottage</i>
-                                <span class="text">Página inicial</span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="#" class="sidebar-btn">
-                                <i class="material-symbols-outlined text">send</i>
-                                <span class="text">Publicar</span>
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="#" class="sidebar-btn">
-                                <i class="material-symbols-outlined text">computer</i>
-                                <span class="text">Informática</span>
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="#" class="sidebar-btn">
-                                <i class="material-symbols-outlined text">electric_bolt</i>
-                                <span class="text">Eletroeletrônica</span>
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="#" class="sidebar-btn">
-                                <i class="material-symbols-outlined text">globe_uk</i>
-                                <span class="text">Controle Ambiental</span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="#" class="sidebar-btn">
-                                <i class="material-symbols-outlined text">science</i>
-                                <span class="text">Engenharia Química</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>    
+<body class="">
+    <nav class="sidebar closed">
+        <header class="not-selectable">
+            <div class="logo-box ">
+                <img class="logo" src="ASSETS/logo/logo_light.svg" alt="dubium">
+                <span class="logo-text text">dubium</span>
             </div>
-            
-            <div class="bottom">
-                <ul class="buttons">
-                    <li>
-                        <a href="#" class="sidebar-btn">
-                            <i class="material-symbols-outlined text login-btn">login</i>
-                            <span class="text login-btn">Entrar</span>
+
+            <i class="material-symbols-outlined toggle-btn btn-sm">chevron_right</i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-symbols-outlined icon">cottage</i>
+                            <span class="text nav-text">Página Inicial</span>
                         </a>
                     </li>
-                    
-                    <li>
-                        <a href="#" class="sidebar-btn">
-                            <i class="material-symbols-outlined text">person_add</i>
-                            <span class="text">Cadastrar</span>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-symbols-outlined icon">send</i>
+                            <span class="text nav-text">Publicar</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-symbols-outlined icon">computer</i>
+                            <span class="text nav-text">Informática</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-symbols-outlined icon">electric_bolt</i>
+                            <span class="text nav-text">Eletroeletrônica</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-symbols-outlined icon">globe_uk</i>
+                            <span class="text nav-text">Controle Ambiental</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-symbols-outlined icon">science</i>
+                            <span class="text nav-text">Engenharia Química</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-symbols-outlined icon login-btn">login</i>
+                            <span class="text nav-text login-btn">Entrar</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="material-symbols-outlined icon">person_add</i>
+                            <span class="text nav-text">Cadastrar</span>
                         </a>
                     </li>
                 </ul>

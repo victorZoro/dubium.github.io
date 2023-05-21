@@ -1,10 +1,18 @@
 @import "../sidebar.css";
 
+/* ==========================================
+                Sidebar Dark Mode
+============================================= */
+
 body.dark .sidebar {
     background: var(--text);
 }
 
 body.dark .logo-text {
+    color: var(--white);
+}
+
+body.dark .toggle-btn {
     color: var(--white);
 }
 
@@ -14,4 +22,9 @@ body.dark .text {
 
 body.dark .buttons .login-btn {
     color: var(--green);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text);
 }
