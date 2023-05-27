@@ -1,0 +1,72 @@
+@import "style.css";
+
+/* ==========================================
+                    Index
+============================================= */
+
+.screen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: calc(360px / 2); /* 180px - metade da sidebar */
+    width: calc(100%-360px);
+    height: 100vh;
+    transition: var(--tran-05);
+}
+
+.midscreen {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 100vh;
+    transition: var(--tran-04);
+}
+
+.midscreen .top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+}
+
+.top-bar .buttons-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+
+.top-bar .buttons-bar .left-buttons,
+.top-bar .buttons-bar .mid-buttons,
+.buttons-bar .mid-buttons .buttons,
+.top-bar .buttons-bar .right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons-bar .mid-buttons .search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+    border-radius: var(--big-border-radius);
+    border: 3px solid var(--blue);
+    background: var(--white);
+    transition: var(--tran-04);
+}
+
+.buttons-bar .mid-buttons .search-bar .search-tool {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--big-border-radius);
+    background: var(--white);
+}
+
+.search-bar .search-btn:hover {
+    color: var(--orange);
+    background: none;
+}

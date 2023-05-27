@@ -91,6 +91,7 @@
 .login-box .actions button:hover {
     scale: 110%;
     background: var(--dark-orange);
+    cursor: pointer;
 }
 
 .login-box .actions .login-text {

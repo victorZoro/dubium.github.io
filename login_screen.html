@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- CSS & JS -->
-    <link rel="stylesheet" href="CSS/login_style.css">
+    <link rel="stylesheet" href="CSS/login_screen.css">
     <link rel="stylesheet" href="CSS/dark_mode/login_style_dark.css">
     <script defer src="JS/script.js"></script>
 </head>
@@ -29,26 +29,35 @@
                 <div>
                     <span class="text">CPF:</span>
                     <div class="field">
-                        <input type="text" class="borderless" placeholder="Digite seu CPF...">
+                        <input type="text" class="cpf-field borderless" placeholder="Digite seu CPF...">
                     </div>
                 </div>
 
                 <div>
                     <span class="text">Senha:</span>
                     <div class="field">
-                        <input type="password" class="borderless" placeholder="Digite sua senha...">
+                        <input type="password" class="pass-field borderless" placeholder="Digite sua senha...">
                     </div>
                 </div>
             </div>
 
             <div class="actions">
-                <button class="borderless">
+                <button class="login-btn borderless">
                     <i class="material-symbols-outlined text login-icon">login</i>
                     <span class="text login-text">Entrar</span>
                 </button>
-                <span class="text">Não tem um cadastro? <a href="#" class="signup-text">Cadastre-se.</a></span>
+                <span class="text">Não tem um cadastro? <a href="https://iu.cefetmg.br/cadastro/passo1?" class="signup-text">Cadastre-se.</a></span>
             </div>
         </div>
     </div>
+    
+
+    <script>
+        const loginBtn = document.querySelector('.login-btn');
+
+        loginBtn.addEventListener('click', () => {
+            window.open("../index.html","_self");
+        });
+    </script>
 </body>
 </html>

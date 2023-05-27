@@ -1,0 +1,26 @@
+@import "sidebar.css";
+@import "index.css";
+
+.sidebar.closed {
+    width: 120px;
+}
+.sidebar.closed .text {
+    opacity: 0;
+}
+
+.sidebar.closed .toggle-btn {
+    transform: translateY(-50%);
+}
+
+.sidebar.closed ~ .screen {
+    left: calc(120px / 2); /* 180px - metade da sidebar */
+    width: calc(100%-120px);
+}
+
+.sidebar.closed ~ .screen .midscreen {
+    width: 1500px;
+}
+
+.sidebar.closed ~ .screen .midscreen .search-bar {
+    width: 620px;
+}

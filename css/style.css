@@ -64,7 +64,7 @@ body {
     'FILL' 1,
     'wght' 700,
     'GRAD' 0,
-    'opsz' 48
+    'opsz' 24
 }
 
 .text {
@@ -92,9 +92,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px;
     width: 75px;
     height: 75px;
     border-radius: var(--default-border-radius);
+    transition: var(--tran-03);
 }
 
 .icon {
@@ -107,3 +109,47 @@ body {
 /* ==========================================
                 Hovering Defaults
 ============================================= */
+
+.btn-sm:hover {
+    color: var(--background);
+    background: var(--orange);
+    cursor: pointer;
+    scale: 115%;
+}
+
+/* ==========================================
+                    Dark-Mode
+============================================= */
+
+body.dark {
+    background: var(--background);
+}
+
+body.dark .login-box {
+    background: var(--text);
+}
+
+body.dark .text {
+    color: var(--white);
+}
+
+body.dark .logo-text {
+    color: var(--white);
+}
+
+body.dark .sidebar {
+    background: var(--text);
+}
+
+body.dark .sidebar .toggle-btn {
+    color: var(--white);
+}
+
+body.dark .sidebar .buttons .login-btn {
+    color: var(--green);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text);
+}
