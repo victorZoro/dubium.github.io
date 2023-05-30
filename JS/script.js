@@ -27,3 +27,15 @@ const sendPostBtn = document.querySelector('.send-input');
 sidebarSendBtn.addEventListener('click', () => {
     sendPostBtn.focus();
 })
+
+const userStatus = document.querySelector('.user');
+const userOnOff = document.querySelector('.on-off');
+
+userStatus.addEventListener('click', () => {
+    userStatus.classList.toggle('offline');
+    if(userOnOff.innerHTML === 'offline') {
+        userOnOff.innerHTML = 'online';
+    } else {
+        userOnOff.innerHTML = 'offline';
+    }
+});

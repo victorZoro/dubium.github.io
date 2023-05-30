@@ -14,6 +14,9 @@
     --dark-orange: #c53800;
     --green: #c8e50f;
 
+    --alpha-green: rgba(200, 229, 15, 0.2);
+    --alpha-orange:rgba(233, 65, 0, 0.2);
+
     --tran-02: all 200ms ease;
     --tran-03: all 300ms ease;
     --tran-04: all 400ms ease;

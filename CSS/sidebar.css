@@ -98,3 +98,70 @@
 .sidebar .text.login-btn {
     color: var(--green);
 }
+
+.sidebar .bottom .user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    height: 125px;
+    border-radius: var(--default-border-radius);
+    transition: var(--tran-04);
+}
+
+.sidebar .bottom .user:hover {
+    cursor: pointer;
+    scale: 105%;
+    background: var(--alpha-green);
+}
+
+.sidebar .bottom .user.offline:hover {
+    background: var(--alpha-orange);
+}
+
+.sidebar.closed .bottom .user {
+    padding: 15px;
+    height: 80px;
+    background: var(--alpha-green);
+    border-radius: 50%;
+}
+
+.sidebar.closed .bottom .user.offline {
+    background: var(--alpha-orange);
+}
+
+.sidebar.closed .bottom .user:hover {
+    border-radius: var(--default-border-radius);
+    scale: 130%;
+}
+
+.sidebar .bottom .user .user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom .user .user-info .username {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--background);
+}
+
+.sidebar .bottom .user .user-info .on-off {
+    font-size: 16px;
+    color: var(--green);
+    transition: var(--tran-03);
+}
+
+.sidebar .bottom .user.offline .user-info .on-off {
+    color: var(--orange);
+}
+
+.sidebar .bottom .usr-profile-picture {
+    transition: var(--tran-03);
+}
+
+.sidebar.closed .bottom .usr-profile-picture {
+    width: 50px;
+    height: 50px;
+}
