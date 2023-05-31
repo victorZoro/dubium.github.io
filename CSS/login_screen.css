@@ -25,6 +25,10 @@
     gap: 30px;
 }
 
+body.dark .login-box {
+    background: var(--text);
+}
+
 .login-box.dark {
     background: var(--text);
 }
@@ -111,4 +115,8 @@
 .login-box .actions .signup-text:hover {
     font-weight: 800;
     color: var(--text);
+}
+
+body.dark .login-box .actions .signup-text:hover {
+    color: var(--white);
 }

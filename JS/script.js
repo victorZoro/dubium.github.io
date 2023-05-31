@@ -14,7 +14,7 @@ toggleDarkModeBtn.addEventListener('click', () => {
         toggleDarkModeBtn.classList.remove('light-mode');
         toggleDarkModeBtn.classList.add('dark-mode');
     } else if(toggleDarkModeBtn.classList.contains('dark-mode')) {
-        toggleDarkModeBtn.innerHTML = 'brightness_7';
+        toggleDarkModeBtn.innerHTML = 'light_mode';
         document.body.classList.remove('dark');
         toggleDarkModeBtn.classList.remove('dark-mode');
         toggleDarkModeBtn.classList.add('light-mode');

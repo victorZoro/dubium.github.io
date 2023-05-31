@@ -54,6 +54,10 @@ body {
     --green: #c8e50f;
 }
 
+body.dark {
+    background: var(--background);
+}
+
 .not-selectable {
     user-select: none;
 }
@@ -76,6 +80,10 @@ body {
     font-size: 20px;
 }
 
+body.dark .text {
+    color: var(--white);
+}
+
 .logo-box {
     display: flex;
     align-items: center;
@@ -90,6 +98,10 @@ body {
     font-size: 36px;
     font-weight: 600;
     color: var(--text);
+}
+
+body.dark .logo-text {
+    color: var(--white);
 }
 
 .btn {
@@ -108,6 +120,26 @@ body {
     transition: var(--tran-03);
 }
 
+body.dark .btn {
+    color: var(--white);
+    border: 3px solid var(--white);
+    background: none;
+}
+
+.btn:hover {
+    color: var(--background);
+    background: var(--orange);
+    border: none;
+    cursor: pointer;   
+    scale: 110%;
+}
+
+body.dark .btn:hover {
+    border:none;
+    color: var(--background);
+    background: var(--orange);
+}
+
 .btn-sm {
     display: flex;
     align-items: center;
@@ -118,6 +150,21 @@ body {
     height: 75px;
     border-radius: var(--default-border-radius);
     transition: var(--tran-03);
+}
+
+body.dark .btn-sm {
+    color: var(--white);
+}
+
+.btn-sm:hover {
+    color: var(--background);
+    background: var(--orange);
+    cursor: pointer;
+    scale: 115%;
+}
+
+body.dark .btn-sm:hover {
+    color: var(--background);
 }
 
 .icon {
@@ -140,107 +187,7 @@ body {
     height: 78px;
 }
 
-/* ==========================================
-                Hovering Defaults
-============================================= */
-
-.btn:hover {
-    color: var(--background);
-    background: var(--orange);
-    border: none;
-    cursor: pointer;   
-    scale: 110%;
-}
-
-.btn-sm:hover {
-    color: var(--background);
-    background: var(--orange);
-    cursor: pointer;
-    scale: 115%;
-}
-
-/* ==========================================
-                    Dark-Mode
-============================================= */
-
-body.dark {
-    background: var(--background);
-}
-
-body.dark .login-box {
-    background: var(--text);
-}
-
-body.dark .text {
-    color: var(--white);
-}
-
-body.dark .logo-text {
-    color: var(--white);
-}
-
-body.dark .sidebar {
-    background: var(--text);
-}
-
-body.dark .sidebar .toggle-btn {
-    color: var(--white);
-}
-
-body.dark .sidebar .buttons .login-btn {
-    color: var(--green);
-}
-
-body.dark .sidebar li a:hover .icon,
-body.dark .sidebar li a:hover .text {
-    color: var(--text);
-}
-
-body.dark .btn {
-    color: var(--white);
-    border: 3px solid var(--white);
-    background: none;
-}
-
-body.dark .btn:hover {
-    border:none;
-    color: var(--background);
-    background: var(--orange);
-}
-
-body.dark .btn-sm {
-    color: var(--white);
-}
-
-body.dark .btn-sm:hover {
-    color: var(--background);
-}
-
-body.dark .midscreen .action-post .actions .btn-sm {
-    color: var(--white);
-    border: 3px solid var(--white);
-    background: none;
-}
-
-body.dark .midscreen .action-post .actions .btn-sm:hover {
-    border:none;
-    color: var(--background);
-    background: var(--orange);
-}
-
-body.dark .buttons-bar .mid-buttons .search-bar {
-    border: 3px solid var(--white);
-    background: var(--background);
-}
-
 body.dark .search-bar .search-btn:hover,
 body.dark .sidebar .toggle-btn:hover {
     color: var(--orange);
 }
-
-body.dark .midscreen .action-post .text-field {
-    background: none;
-    border: 3px solid var(--white);
-}
-
-
