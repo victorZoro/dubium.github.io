@@ -121,7 +121,9 @@ O site segue, em 99% da sua estruturação, a modelagem feita no Figma. As ferra
 
 - **18/05/2023:** A página de Login começa a ser desenvolvida e é terminada no mesmo dia. As imagens da página de login no seu modo claro e modo escuro serão adicionadas posteriormente à versão completa da página inicial, quando for finalizada.
 
-- **20/05/2023:** A página inicial começa a ser desenvolvida. A expectativa é que a página inicial seja finalizazda até o dia seguinte (21/05), porém, imprevistos podem acontecer durante o desenvolvimento, atrasando a página. Este texto será atualizado assim que a página estiver completa.
+- **20/05/2023:** A página inicial começa a ser desenvolvida. A expectativa é que a página inicial seja finalizazda até o dia seguinte (21/05), porém, imprevistos podem acontecer durante o desenvolvimento, atrasando a página.
+
+- **31/05/2023:** Devido a inúmeros atrasos durante os dias da semana e problemas pessoais, a página principal acaba de ser finalizada no dia de hoje. Apesar de tudo, tudo que foi adicionado funciona de acordo com o esperado.
 
 </span>
 
