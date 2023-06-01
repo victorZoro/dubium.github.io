@@ -107,7 +107,25 @@ A página de login está basicamente idêntica à original, porém, com algumas 
 
 O site segue, em 99% da sua estruturação, a modelagem feita no Figma. As ferramentas utilizadas são **HTML**, **CSS**, **JavaScript** e, futuramente, **PHP** e **MySQL**.
 
-<pre  align="center">[Imagens serão adicionadas posteriormente]</pre>
+<h4 align="center">Página de Login:</h4>
+<div style="display: flex; width: 50%;">
+    <img src="ASSETS/website_imgs/lgsc_lm.png">
+    <img src="ASSETS/website_imgs/lgsc_dm.png">
+</div>
+
+<h4 align="center">Homepage (Sidebar Aberta):</h4>
+<div style="display: flex; width: 50%;">
+    <img src="ASSETS/website_imgs/hmpg_so_lm.png">
+    <img src="ASSETS/website_imgs/hmpg_so_dm.png">
+</div>
+
+<h4 align="center">Homepage (Sidebar Fechada):</h4>
+<div style="display: flex; width: 50%;">
+    <img src="ASSETS/website_imgs/hmpg_sc_lm.png">
+    <img src="ASSETS/website_imgs/hmpg_sc_dm.png">
+</div>
+
+<br><pre  align="center">[Mais imagens serão adicionadas posteriormente]</pre>
 
 </span>
 
