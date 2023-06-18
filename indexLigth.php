@@ -1,5 +1,28 @@
-<!DOCTYPE html>
+<?php
+//Aumanter (A+) e diminuir(A-);
+
+// Verificar se o usuário enviou uma solicitação para aumentar ou diminuir o tamanho da fonte
+if (isset($_GET['aumentar'])) {
+    $tamanhoFonte = isset($_COOKIE['tamanho_fonte']) ? $_COOKIE['tamanho_fonte'] + 2 : 18;
+    setcookie('tamanho_fonte', $tamanhoFonte, time() + (86400 * 30), '/'); // Cookie válido por 30 dias
+} elseif (isset($_GET['diminuir'])) {
+    $tamanhoFonte = isset($_COOKIE['tamanho_fonte']) ? $_COOKIE['tamanho_fonte'] - 2 : 18;
+    setcookie('tamanho_fonte', $tamanhoFonte, time() + (86400 * 30), '/'); // Cookie válido por 30 dias
+} else {
+    $tamanhoFonte = isset($_COOKIE['tamanho_fonte']) ? $_COOKIE['tamanho_fonte'] : 18;
+}
+//Post da Duvida usando o metodo POST;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $mensagem = "sua duvida foi postada com sucesso ";
+    echo "<script>alert('$mensagem');</script>";
+
+}
+
+
+echo '<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +30,27 @@
     <title>Dubium</title>
 
     <!-- Material Symbols - Google -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- CSS & JS -->
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/sidebar_closed.css">
     <script defer src="JS/script.js"></script>
+    <iframe src="php/post.php"></iframe>
+    <style>
+        body {
+            font-size: ' . $tamanhoFonte . 'px;
+        }
+    </style>
 
 </head>
+
 <body class="">
     <nav class="sidebar">
         <header class="not-selectable">
-            <a href="index.html" class="logo-box">
+            <a href="indexLigth.php" class="logo-box">
                 <img class="logo" src="ASSETS/logo/logo_light.svg" alt="dubium">
                 <span class="logo-text text">dubium</span>
             </a>
@@ -31,7 +62,7 @@
             <div class="menu">
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="index.html">
+                        <a href="indexLigth.php">
                             <i class="material-symbols-outlined icon">cottage</i>
                             <span class="text nav-text">Página Inicial</span>
                         </a>
@@ -84,7 +115,7 @@
                 </div> -->
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="login_screen.html">
+                        <a href="login_screen.php">
                             <i class="material-symbols-outlined icon login-btn">login</i>
                             <span class="text nav-text login-btn">Entrar</span>
                         </a>
@@ -107,7 +138,7 @@
                 <div class="buttons-bar">
                     <div class="left-buttons not-selectable">
                         <i class="material-symbols-outlined btn-sm">help</i>
-                        <i class="material-symbols-outlined btn-sm light-dark-btn light-mode">light_mode</i>
+                        <a href="indexDark.php" style="text-decoration: none;"><i class="material-symbols-outlined btn-sm light-dark-btn light-mode">light_mode</i></a>
                     </div>
 
                     <div class="mid-buttons">
@@ -115,10 +146,12 @@
                             <i class="material-symbols-outlined search-btn btn-sm not-selectable">search</i>
                             <input type="text" class="search-tool borderless" placeholder="Como usar o SIGAA?">
                         </div>
+
                         <div class="buttons not-selectable">
-                            <i class="material-symbols-outlined btn-sm">text_increase</i>
-                            <i class="material-symbols-outlined btn-sm">text_decrease</i>
+                            <a href="?aumentar" style="text-decoration: none;"><i class="material-symbols-outlined btn-sm">text_increase</i></a>
+                            <a href="?diminuir" style="text-decoration: none;"><i class="material-symbols-outlined btn-sm">text_decrease</i></a>
                         </div>
+
                     </div>
 
                     <div class="right-buttons not-selectable">
@@ -129,25 +162,31 @@
                 </div>
             </div>
 
-            <div class="action-post">
-                <div class="text-field">
-                    <div class="field-wrapper">
-                        <img src="ASSETS/user_profile_picture.png" alt="User Image" class="usr-profile-picture">
-                        <input type="text" placeholder="Qual a sua dúvida hoje?" class="borderless send-input">
+            <form method="post">
+                <div class="action-post">
+                    <div class="text-field">
+                        <div class="field-wrapper">
+                            <img src="ASSETS/user_profile_picture.png" alt="User Image" class="usr-profile-picture">
+                            <input type="text" name="duvida" placeholder="Qual a sua dúvida hoje?"
+                                class="borderless send-input">
+                        </div>
+                    </div>
+                    <div class="actions not-selectable">
+                        <div class="attach-files">
+                            <i class="material-symbols-outlined btn-sm">image</i>
+                            <i class="material-symbols-outlined btn-sm">gif_box</i>
+                            <i class="material-symbols-outlined btn-sm">sentiment_satisfied</i>
+                        </div>
+                        <!-- Vou mexer aqui com o botão publicar-->
+                        <button  class="send-btn btn">
+                            <i class="material-symbols-outlined">send</i>
+                            <span>Publicar</span>
+                            <button type="submit" style="display: none;"></button>
+                        </button>
+                        <!----------------->
                     </div>
                 </div>
-                <div class="actions not-selectable">
-                    <div class="attach-files">
-                        <i class="material-symbols-outlined btn-sm">image</i>
-                        <i class="material-symbols-outlined btn-sm">gif_box</i>
-                        <i class="material-symbols-outlined btn-sm">sentiment_satisfied</i>
-                    </div>
-                    <div class="send-btn btn">
-                        <i class="material-symbols-outlined">send</i>
-                        <span>Publicar</span>
-                    </div>
-                </div>
-            </div>
+            </form>
 
             <div class="post-area">
                 <div class="post">
@@ -173,7 +212,10 @@
 
                     <div class="content">
                         <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
+                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
                         </div>
 
                         <img src="ASSETS/sample_image.jpg" alt="Post Image" class="img-area">
@@ -191,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="post">
                     <div class="top-section">
 
@@ -208,14 +250,17 @@
                                 <div class="post-info-section">Postado em 03/05/2024 às 15:20</div>
                             </div>
                         </div>
-                        
+
                         <i class="material-symbols-outlined btn-sm">flag</i>
 
                     </div>
 
                     <div class="content">
                         <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
+                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
                         </div>
 
                         <!-- <img src="" alt="Post Image" class="img-area"> -->
@@ -257,7 +302,10 @@
 
                     <div class="content">
                         <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
+                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
+                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
                         </div>
 
                         <!-- <img src="" alt="Post Image" class="img-area"> -->
@@ -279,4 +327,6 @@
         </div>
     </section>
 </body>
-</html>
+
+</html>';
+?>
