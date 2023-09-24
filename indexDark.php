@@ -1,4 +1,5 @@
 <?php
+include "post.php";
 //Aumanter (A+) e diminuir(A-);
 
 // Verificar se o usuário enviou uma solicitação para aumentar ou diminuir o tamanho da fonte
@@ -38,7 +39,6 @@ echo '<!DOCTYPE html>
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/sidebar_closed.css">
     <script defer src="JS/script.js"></script>
-    <iframe src="php/post.php"></iframe>
     <style>
         body {
             font-size: ' . $tamanhoFonte . 'px;
@@ -144,9 +144,11 @@ echo '<!DOCTYPE html>
                     </div>
 
                     <div class="mid-buttons">
+                    <form method="post" action="Pesquisa.php">
                         <div class="search-bar">
                             <i class="material-symbols-outlined search-btn btn-sm not-selectable">search</i>
-                            <input type="text" class="search-tool borderless" placeholder="Como usar o SIGAA?">
+                            <input type="text" name ="pesquisa" class="search-tool borderless" placeholder="Como usar o SIGAA?">
+                    </form>
                         </div>
 
                         <div class="buttons not-selectable">
@@ -193,7 +195,7 @@ echo '<!DOCTYPE html>
             <div class="post-area">
                 <div class="post">
                     <div class="top-section">
-
+                        
                         <div class="user-info">
                             <img src="ASSETS/user_profile_picture.png" alt="User Image" class="usr-profile-picture">
                             <div class="user-text-info">
@@ -213,12 +215,9 @@ echo '<!DOCTYPE html>
                     </div>
 
                     <div class="content">
-                        <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
-                        </div>
+                        <div class="text-area">'
+                        . post(1) . 
+                        '</div>
 
                         <img src="ASSETS/sample_image.jpg" alt="Post Image" class="img-area">
 
