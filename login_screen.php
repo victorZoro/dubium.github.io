@@ -2,6 +2,7 @@
 include 'funcao_teste_tamanhoCpf.php';
 include 'funcao_letras_cpf.php';
 include 'funcao_testa_tam_senha.php';
+include 'funcao_testa_credenciais.php';
 
 //verifica se o formulario foi enviado;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -28,13 +29,17 @@ if (empty($senha)) {
     $erroSenha = "Senha de tamanho invalido, digite uma senha valida";
 }
 
-
-
+//verificação de credencas no banco de dados
+if(validaCredenciais() == false){
+    $erro = "usuario invalido!";
+}
 //Nenhum erro foi encontrado;
-if (empty($errocpf) && empty($erroSenha)) {
+if (empty($errocpf) && empty($erroSenha) && validaCredenciais() == true ) {
     header("location:indexLigth.php");
     exit;
 }
+
+
 
 ?>
 
@@ -96,6 +101,12 @@ if (empty($errocpf) && empty($erroSenha)) {
                             </span>
                         <?php } ?>
                     </div>
+                    <?php
+                        if(validaCredenciais() == false){?>
+                            <span class="erro-msg">
+                            <?php echo $erro; ?>
+                        </span>
+                    <?php } ?>  
                 </div>
 
 
