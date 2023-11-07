@@ -4,6 +4,7 @@ include 'funcao_letras_cpf.php';
 include 'funcao_testa_tam_senha.php';
 include 'funcao_testa_credenciais.php';
 
+
 //verifica se o formulario foi enviado;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cpf = $_POST["cpf"];
@@ -47,6 +48,11 @@ if (empty($errocpf) && empty($erroSenha) && validaCredenciais() == true ) {
 <html lang="pt-br">
 
 <head>
+    <style>
+        .erro-msg {
+            color: red;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,7 +109,7 @@ if (empty($errocpf) && empty($erroSenha) && validaCredenciais() == true ) {
                     </div>
                     <?php
                         if(validaCredenciais() == false){?>
-                            <span class="erro-msg">
+                            <span class="erro-msg"> 
                             <?php echo $erro; ?>
                         </span>
                     <?php } ?>  

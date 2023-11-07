@@ -1,5 +1,7 @@
 <?php
 include "post.php";
+//include "funcao_data_hora.php"; 
+
 //Aumanter (A+) e diminuir(A-);
 
 // Verificar se o usuário enviou uma solicitação para aumentar ou diminuir o tamanho da fonte
@@ -111,7 +113,7 @@ echo '<!DOCTYPE html>
                 <!-- <div class="user">
                     <img src="ASSETS/user_profile_picture.png" alt="User Image" class="usr-profile-picture not-selectable">
                     <div class="user-info">
-                        <span class="username text">Username</span>
+                        <span class="username text">Aluno</span>
                         <span class="on-off text not-selectable">online</span>
                     </div>
                 </div> -->
@@ -166,7 +168,7 @@ echo '<!DOCTYPE html>
                 </div>
             </div>
 
-            <form method="post">
+            <form action="inserirDuvidaNoBd.php" method="POST">
                 <div class="action-post">
                     <div class="text-field">
                         <div class="field-wrapper">
@@ -200,13 +202,13 @@ echo '<!DOCTYPE html>
                             <img src="ASSETS/user_profile_picture.png" alt="User Image" class="usr-profile-picture">
                             <div class="user-text-info">
                                 <div class="user-forum-section">
-                                    <span class="username">Username</span>
+                                    <span class="username">Aluno</span>
                                     <div class="forum-posted">
                                         <i class="material-symbols-outlined course-icon">computer</i>
                                         <span class="course">Informática</span>
                                     </div>
                                 </div>
-                                <div class="post-info-section">Postado em 09/05/2024 às 07:52</div>
+                                <div class="post-info-section">Postado em '. data(1).' às '.hora(1).'</div>
                             </div>
                         </div>
 
@@ -242,13 +244,13 @@ echo '<!DOCTYPE html>
                             <img src="ASSETS/user_profile_picture.png" alt="User Image" class="usr-profile-picture">
                             <div class="user-text-info">
                                 <div class="user-forum-section">
-                                    <span class="username">Username</span>
+                                    <span class="username">Aluno</span>
                                     <div class="forum-posted">
                                         <i class="material-symbols-outlined course-icon">globe_uk</i>
                                         <span class="course">Controle Ambiental</span>
                                     </div>
                                 </div>
-                                <div class="post-info-section">Postado em 03/05/2024 às 15:20</div>
+                                <div class="post-info-section">Postado em '. data(2).' às '.hora(2).'</div>
                             </div>
                         </div>
 
@@ -258,10 +260,7 @@ echo '<!DOCTYPE html>
 
                     <div class="content">
                         <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
+                           '.post(2).'
                         </div>
 
                         <!-- <img src="" alt="Post Image" class="img-area"> -->
@@ -287,13 +286,13 @@ echo '<!DOCTYPE html>
                             <img src="ASSETS/user_profile_picture.png" alt="User Image" class="usr-profile-picture">
                             <div class="user-text-info">
                                 <div class="user-forum-section">
-                                    <span class="username">Username</span>
+                                    <span class="username">Aluno</span>
                                     <div class="forum-posted">
                                         <i class="material-symbols-outlined course-icon">language</i>
                                         <span class="course">Geral</span>
                                     </div>
                                 </div>
-                                <div class="post-info-section">Postado em 30/04/2024 às 20:59</div>
+                                <div class="post-info-section">Postado em '. data(3).' às '.hora(3).'</div>
                             </div>
                         </div>
 
@@ -303,10 +302,7 @@ echo '<!DOCTYPE html>
 
                     <div class="content">
                         <div class="text-area">
-                            Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem
-                            ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...
+                           '.post(3).'
                         </div>
 
                         <!-- <img src="" alt="Post Image" class="img-area"> -->
