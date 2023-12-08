@@ -18,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("s", $duvida);
     $stmt->execute();
 
+    
     // Obtenha os resultados
     $result = $stmt->get_result();
 
@@ -26,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     while ($row = $result->fetch_assoc()) {
         $resultArray[] = $row;
     }
+
 
     // Imprima os resultados
     foreach ($resultArray as $row) {
